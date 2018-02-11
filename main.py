@@ -3,11 +3,11 @@
 from __future__ import division
 import matplotlib.pyplot as plt
 
-# j= 0  1  2  3        
-X = [1, 3, 4, 6]
-Y = [1, 4, 9, 5]
-oX = [0, 7]
-oY = [0, 25]
+# j= 0  1   2   3        
+X = [1, 2,  6, 11, 15, 18]
+Y = [1, 10, 3, 7,   4, 11]
+oX = [0, 20]
+oY = [0, 15]
 
 def interpolate(X, Y):
     #step 1
@@ -84,8 +84,6 @@ def main():
     print(len(V))
 
     draw(X, Y, R, V, oX, oY)
-
-
 
 
 def draw(pointsX, pointsY, X, Y, oX, oY):
